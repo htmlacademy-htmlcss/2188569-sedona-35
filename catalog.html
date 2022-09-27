@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+    </head>
+
+    <body>
+        <header class="page-header">
+            <nav class="navigation">
+                <img src="#" alt="логотип">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="link" href="#">Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="link" href="#">О Седоне</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="link" href="#">Гостиницы</a>
+                    </li>
+                </ul>
+                <ul class="navigation-user">
+                    <li class="navigation-item">
+                        <a class="link" href="#">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="link" href="#">
+                            <span class="visually-hidden">Избранное</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="navigation-link" href="#"> Хочу сюда!</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <header class="inner-header">
+                <h1 class="inner-header-title">Гостиницы Седоны</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Гостиницы</a>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="filter">
+                <form class="filter-form" method="post" action="https://echo.htmlacademy.ru/">
+                    <fieldset class="filter-group">
+                        <legend class="filter-legend">Инфраструктура:</legend>
+                        <ul class="filter-list">
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="basin" checked>Бассейн</label>
+                            </li>
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="parking" checked>Парковка</label>
+                            </li>
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="wifi">wi-fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend class="filter-legind">Тип жилья:</legend>
+                        <ul class="filter-list">
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-radio" type="radio" name="housing" value="hotel" checked>Гостиница</label>
+                            </li>
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-radio" type="radio" name="housing" value="motel">Мотель</label>
+                            </li>
+                            <li class="filter-item">
+                                <label class="filter-label"><input class="filter-radio" type="radio" name="housing" value="apartments">Апартаменты</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend class="filter-legind">Стоимость, р:</legend>
+                        <p class="filter-costs">
+                            <input class="number" name="cost-min" id="cost-min">
+                            <input class="number" name="cost-max" id="cost-max">
+                        </p>
+                        <input class="filter-cost" type="range" min="0" max="12000" value="900" name="cost" id="cost">
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <button class="filter-btn-submit" type="submit">Применить</button>
+                        <button class="filter-btn-reset" type="reset">Сбросить</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="catalog">
+                <header class="catalog-header"></header>
+
+            </section>
+            /*//
+
+            <section class="subscripton">
+                <h2 class="subscripton-title">Подпишитесь на рассылку</h2>
+                <p class="subscripton-text">Только полезная информацияи никакого спама, честное бойскаутское!</p>
+                <form class="subscripton-form" method="post" name="email" action="https://echo.htmlacademy.ru/">
+                   <fieldset class="subscripton-input">
+                    <input class="subscripton-email" type="email" name="email" placeholder="Ваш e-mail">
+                    <input class="subscripton-submit" type="submit" value="Подписаться">
+                   </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="social">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="link-social" href="#"><span class="visually-hidden">Твиттер</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link-social" href="#"><span class="visually-hidden">Facebook</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link-social" href="#"><span class="visually-hidden">YouTube</span></a>
+                    </li>
+                    <li class="contact">
+                        <p class="contact-tf">+7 (812) 812-12-12</p>
+                    </li>
+                    <li class="logo-contact">
+                        <img class="logo-html" src="#" alt="Логотип html академии">
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
+        
